@@ -1,3 +1,11 @@
+
+== 소스 ==
+채널 
+https://www.youtube.com/c/HopeNLC/playlists
+위 링크의 재생목록 중 solidity
+https://www.youtube.com/watch?v=-J0KPIznbkY&list=PLTOLCf4iVNl45dV6WfjZ3uuRzHOU1paaf
+
+
 - 리믹스 설치
 npm i -g @remix-project/remixd
 
