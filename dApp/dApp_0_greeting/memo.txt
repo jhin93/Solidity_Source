@@ -2,8 +2,33 @@
 source.
 https://www.youtube.com/watch?v=nNUpA0d6CFo&list=PLlrjVgC-IE6xawMbAhFh4wLv9RIDwumU3&index=4&t=9s
 
+명령어
+
+- npx hardhat 
+
+- npx hardhat compile
+
+- npx hardhat node
 
 
 
+- npx hardhat run scripts/deploy.js --network localhost
+    실행결과 : 
+    Greeter deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
+    
+    npx hardhat node 실행창에서도 확인 가능
+    
+    Contract deployment: Greeter
+    Contract address:    0x5fbdb2315678afecb367f032d93f642f64180aa3
+    Transaction:         0x6d6833f7bd9ee1523fa8763120271f11b344d7d1df6ec301275277a33bc697ba
+    From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+    Value:               0 ETH
+    Gas used:            497026 of 497026
+    Block #1:            0x251ea2a07be23dcc19336fdcf81c1e586023aa1fddbd3dd0e4f1bb927d4efc16
+
+    console.log:
+        Deploying a Greeter with greeting: Hello, Hardhat!
 
 
+헬퍼함수 설명 블로그
+https://velog.io/@wrjang96/provider-web3-react-ethers.js-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC#2-ethersjs

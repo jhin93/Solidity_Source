@@ -82,7 +82,8 @@ function App() {
           <button 
           
           // onclick-listener
-          onClick={fetchGreeting}
+          // 버튼 클릭시 브라우저 콘솔창에서 확인 가능.
+          onClick={fetchGreeting} 
 
           style={{ backgroundColor: 'green' }}>Fetch Greeting</button>
           <button 
