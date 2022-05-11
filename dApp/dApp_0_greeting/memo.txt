@@ -30,5 +30,11 @@ https://www.youtube.com/watch?v=nNUpA0d6CFo&list=PLlrjVgC-IE6xawMbAhFh4wLv9RIDwu
         Deploying a Greeter with greeting: Hello, Hardhat!
 
 
-헬퍼함수 설명 블로그
+ethers.js  
+http://www.umlcert.com/ethereum-dapps-16/  
 https://velog.io/@wrjang96/provider-web3-react-ethers.js-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC#2-ethersjs
+
+
+
+window.ethereum  
+https://docs.metamask.io/guide/getting-started.html#basic-considerations  
