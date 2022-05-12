@@ -1,19 +1,39 @@
 
 // 소스
-https://www.youtube.com/watch?v=h05-TkWPCvA&list=PLlrjVgC-IE6xawMbAhFh4wLv9RIDwumU3&index=3
+    https://www.youtube.com/watch?v=h05-TkWPCvA&list=PLlrjVgC-IE6xawMbAhFh4wLv9RIDwumU3&index=3
 
 
 
 
-// 오픈제플린 
-npm install @openzeppelin/contracts
+// 1. 오픈제플린 설치
+    npm install @openzeppelin/contracts
 
-// 추가 모듈 설치
-npm install @nomiclabs/hardhat-waffle @nomiclabs/hardhat-ethers ethers chai
+// 2. 추가 모듈 설치
+    npm install @nomiclabs/hardhat-waffle @nomiclabs/hardhat-ethers ethers chai
 
-// verify plugin(etherscan) 설치
-npm install @nomiclabs/hardhat-etherscan
+// 3. verify plugin(etherscan) 설치
+    npm install @nomiclabs/hardhat-etherscan
 
-// secrets.json
-1. secrets.json의 키값("url")  https://admin.moralis.io/speedyNodes 의 Ropsten url을 value로 삽입
-2. secrets.json의 키값("key") 메타마스크 - 화면 중단 우측 점 3개 - 계정 세부 정보 - 비공개 키 내보내기
+// 4. secrets.json
+    1. secrets.json의 키값("url")  https://admin.moralis.io/speedyNodes 의 Ropsten url을 value로 삽입
+    2. secrets.json의 키값("key") 메타마스크 ropsten 테스트 네트워크 계정(0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266) - 화면 중단 우측 점 3개 - 계정 세부 정보 - 비공개 키 내보내기
+    3. 테스트 이더 없으면 https://fauceth.komputing.org/  에서 테스트 중인 메타마스크 계정으로 테스트 이더 좀 받아놓기. 안그럼 가스비가 없어서 테스트 배포가 안됨.
+
+// 5. 테스트넷에 배포
+    npx hardhat run scripts/deploy.js --network ropsten
+    결과 : 
+    NFT deployed to: 0x64568548318bE388D75495C11c01C02d89AE7D07
+
+// 6. 배포 주소 검증
+    npx hardhat verify '배포주소(ex 0x64568548318bE388D75495C11c01C02d89AE7D07)' --network ropsten
+
+    결과 : 
+
+    Nothing to compile
+    Downloading compiler 0.8.4
+    Successfully submitted source code for contract
+    contracts/NFT.sol:NFT at 0x64568548318bE388D75495C11c01C02d89AE7D07
+    for verification on the block explorer. Waiting for verification result...
+
+    Successfully verified contract NFT on Etherscan.
+    https://ropsten.etherscan.io/address/0x64568548318bE388D75495C11c01C02d89AE7D07#code
