@@ -11,5 +11,7 @@ npm install @openzeppelin/contracts
 // 추가 모듈 설치
 npm install @nomiclabs/hardhat-waffle @nomiclabs/hardhat-ethers ethers chai
 
+// verify plugin(etherscan) 설치
+npm install @nomiclabs/hardhat-etherscan
 
 
