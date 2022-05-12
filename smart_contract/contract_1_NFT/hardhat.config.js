@@ -1,5 +1,6 @@
 require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-etherscan");
+require("./secrets")
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -24,5 +25,9 @@ module.exports = {
       url: secrets.url,
       accounts: [secrets.key]
     }
+  },
+  etherscan : {
+    // https://etherscan.io/myapikey 에서 확인 가능
+    apiKey: "1KTW7D2SXJS1H7QYTAV418DB38INZI6BNH"
   }
 };
