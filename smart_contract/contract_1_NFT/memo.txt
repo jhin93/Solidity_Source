@@ -14,4 +14,6 @@ npm install @nomiclabs/hardhat-waffle @nomiclabs/hardhat-ethers ethers chai
 // verify plugin(etherscan) 설치
 npm install @nomiclabs/hardhat-etherscan
 
-
+// secrets.json
+1. secrets.json의 키값("url")  https://admin.moralis.io/speedyNodes 의 Ropsten url을 value로 삽입
+2. secrets.json의 키값("key") 메타마스크 - 화면 중단 우측 점 3개 - 계정 세부 정보 - 비공개 키 내보내기
