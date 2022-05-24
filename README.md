@@ -14,8 +14,6 @@
 
 2. dApp 제작 연습 
 
-    - 실습완료
-
     - 실습 X
     https://www.youtube.com/watch?v=nNUpA0d6CFo&list=LL&index=15&t=180s (Solidity, Hardhat, & ReactJS)
 
