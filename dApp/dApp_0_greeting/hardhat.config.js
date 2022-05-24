@@ -25,5 +25,8 @@ module.exports = {
     hardhat : {
       chainId: 1337,
     }
+    // knives : {
+    //   url: "http://127.0.0.1:8545/"
+    // }
   }
 };
