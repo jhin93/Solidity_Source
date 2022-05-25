@@ -1,4 +1,5 @@
 require("@nomiclabs/hardhat-waffle");
+require("dotenv").config();
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -26,8 +27,8 @@ module.exports = {
     //   chainId: 1337,
     // }
     knives : {
-      url: "http://127.0.0.1:8545/",
-      accounts: ["ec0b21907924848583d3cf095570984d92d5bd4c6dd95a282d57f147c890f075"]
+      url: process.env.KNIVES_NODE1_URL,
+      accounts: [process.env.KNIVES_NODE1_PRIVATE_KEY]
     }
   }
 };
