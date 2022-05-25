@@ -22,11 +22,12 @@ module.exports = {
     artifacts: './src/artifacts',
   },
   networks: {
-    hardhat : {
-      chainId: 1337,
-    }
-    // knives : {
-    //   url: "http://127.0.0.1:8545/"
+    // hardhat : {
+    //   chainId: 1337,
     // }
+    knives : {
+      url: "http://127.0.0.1:8545/",
+      accounts: ["ec0b21907924848583d3cf095570984d92d5bd4c6dd95a282d57f147c890f075"]
+    }
   }
 };
