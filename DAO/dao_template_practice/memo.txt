@@ -4,3 +4,4 @@ https://www.youtube.com/watch?v=AhJtmUqhAqg&list=PLlrjVgC-IE6xawMbAhFh4wLv9RIDwu
 
 
 1/27 06:30 까지 시청.
+1/28 12:12 까지 시청. snapshot 개념 깃헙에 메모. 함수 overriding 시, 다중 상속(혹은 연속 상속)이 일어난 경우 overriding 하려는 함수의 contract를 명시해줘야 한다.
