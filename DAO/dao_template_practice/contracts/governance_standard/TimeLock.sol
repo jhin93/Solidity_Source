@@ -1,5 +1,16 @@
-// We want to wait for a new vote to be "excuted"
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
 
-// Everyone who holds the governance token has to pay 5 tokens
+import "../../node_modules/@openzeppelin/contracts/governance/TimelockController.sol";
 
-// Give time to users to "get out" if they don't like a governance update
+contract TimeLock is TimelockController {
+    // minDelay : How long you have to wait before executing
+    // proposers :  List of addresses that can propose
+    // execurots : Who can execute when a proposal passes
+    constructor(
+        uint256 minDelay,
+        address[] memory proposers,
+        address[] memory executors,
+        address admin
+    ) TimelockController (minDelay, proposers, executors, admin) {}
+}
