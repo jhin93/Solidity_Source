@@ -10,11 +10,11 @@ import "../../node_modules/@openzeppelin/contracts/governance/extensions/Governo
 
 
 contract GovernorContract is Governor, GovernorSettings, GovernorCountingSimple, GovernorVotes, GovernorVotesQuorumFraction, GovernorTimelockControl {
-    constructor(IVotes _token, TimelockController _timelock)
+    constructor(IVotes _token, TimelockController _timelock, uint256 _votingDelay, uint256 _votingPeriod, uint256 _quorumPercentage)
         Governor("GovernorContract")
-        GovernorSettings(1 /* 1 block */, 50400 /* 1 week */, 0)
+        GovernorSettings(_votingDelay /* 1 block */, _votingPeriod /* 50400 blocks ~ 1 week */, 0)
         GovernorVotes(_token)
-        GovernorVotesQuorumFraction(4)
+        GovernorVotesQuorumFraction(_quorumPercentage)
         GovernorTimelockControl(_timelock)
     {}
 
