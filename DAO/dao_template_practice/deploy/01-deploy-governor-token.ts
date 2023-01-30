@@ -8,3 +8,5 @@ const deployGovernanceToken: DeployFunction = async function (
 ) {
     console.log("Hello!")
 }
+
+export default deployGovernanceToken;
