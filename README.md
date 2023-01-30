@@ -18,7 +18,15 @@
     https://www.youtube.com/watch?v=nNUpA0d6CFo&list=LL&index=15&t=180s (Solidity, Hardhat, & ReactJS)
 
 
+3. DAO 템플릿
 
+    - 실습중
+    How to build an on-chain DAO | Typescript & Solidity (Python version in description)  
+    https://www.youtube.com/watch?v=AhJtmUqhAqg&list=PLlrjVgC-IE6xawMbAhFh4wLv9RIDwumU3&index=16&t=1377s  
+
+    1. Write the smart contracts - done
+    2. Write deployment scripts
+    3. Write scripts to interact with them
 
 
 
