@@ -11,7 +11,7 @@ https://www.youtube.com/watch?v=AhJtmUqhAqg&list=PLlrjVgC-IE6xawMbAhFh4wLv9RIDwu
 GovernorContract은 투표 관련 컨트랙트이고 TimeLock은 Box 컨트랙트를 소유한다 -> 이 사실은 중요한데, 우리가 뭔가 제안하거나 제안(혹은 투표를)을 기다릴 때 원하지 않는 것에는 참여하지 않을 수 있어야 한다.
 GovernorContract에 사용된 함수들은 import한 컨트랙트들로부터 override한 함수들이다.
 
-1/30 
+1/30 27:22 까지 시청.
 yarn add --dev  @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethers 실행
 yarn add --dev hardhat-deploy 실행
 yarn add --dev typescript typechain ts-node @typechain/ethers-v5 @typechain/hardhat @types/chai @types/node 실행
