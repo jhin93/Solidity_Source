@@ -18,4 +18,35 @@ yarn add --dev typescript typechain ts-node @typechain/ethers-v5 @typechain/hard
 yarn hardhat deploy 실행 - deploy 폴더 내부의 스크립트 실행. 결과 = 01-deploy-governor-token.ts 스크립트를 deploy 후 'Hello!' 를 터미널에 출력.
 hardhat은 자체 로컬 네트워크를 내장한 라이브러리이다. 테스트를 위한 1개짜리 노드라고 보면 될 듯.
 
-1/31 
+1/31 37:27 까지 시청. 01-deploy-governor-token.ts 작성 완료
+yarn hardhat node - hardhat node 구성.
+yarn hardhat deploy - deploy 폴더 내부 스크립트 파일 배포.
+
+    01-deploy-governor-token.ts(GovernanceToken.sol) 배포 완료
+    결과 : 
+        Deploying Governance Token...
+        deploying "GovernanceToken" (tx: 0xdf39f85782a932bf8219ebb419e956ff9019d770ad0598f17b592b9921f2f090)...: deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3 with 3402860 gas
+        Deployed governance token to address 0x5FbDB2315678afecb367f032d93F642f64180aa3
+
+
+    01-deploy-governor-token.ts 작성 완료 후(37:08) yarn hardhat deploy 실행
+    결과 : 
+        Deploying Governance Token...
+        deploying "GovernanceToken" (tx: 0xdf39f85782a932bf8219ebb419e956ff9019d770ad0598f17b592b9921f2f090)...: deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3 with 3402860 gas
+        Deployed governance token to address 0x5FbDB2315678afecb367f032d93F642f64180aa3
+        Checkpoints 1
+        Delegated!
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
