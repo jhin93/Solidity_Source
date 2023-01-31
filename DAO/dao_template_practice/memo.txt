@@ -17,3 +17,5 @@ yarn add --dev hardhat-deploy 실행
 yarn add --dev typescript typechain ts-node @typechain/ethers-v5 @typechain/hardhat @types/chai @types/node 실행. 타입스크립트 관련 패키지를 전부 추가하는 것.
 yarn hardhat deploy 실행 - deploy 폴더 내부의 스크립트 실행. 결과 = 01-deploy-governor-token.ts 스크립트를 deploy 후 'Hello!' 를 터미널에 출력.
 hardhat은 자체 로컬 네트워크를 내장한 라이브러리이다. 테스트를 위한 1개짜리 노드라고 보면 될 듯.
+
+1/31 
