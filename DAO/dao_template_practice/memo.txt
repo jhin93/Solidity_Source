@@ -37,7 +37,7 @@ yarn hardhat deploy - deploy 폴더 내부 스크립트 파일 배포.
         Checkpoints 1
         Delegated!
     
-
+2/4 
 
 
 
