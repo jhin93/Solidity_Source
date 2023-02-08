@@ -9,4 +9,10 @@ const deployTimeLock: DeployFunction = async function (
     const { deploy, log } = deployments;
     const { deployer } = await getNamedAccounts();
     log("Deploying Timelock...")
+
+    const timeLock = await deploy("TimeLock", {
+        from: deployer,
+        args: []
+    })
+
 };
