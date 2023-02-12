@@ -1,10 +1,12 @@
 // these are the two main things you need to create a deploy function with hardhat deploy.
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { DeployFunction } from 'hardhat-deploy/types';
+// @ts-ignore
 import { ethers } from "hardhat";
 
 
 const deployGovernanceToken: DeployFunction = async function (hre: HardhatRuntimeEnvironment) { // hre : hardhat runtime environment
+    // @ts-ignore
     const { getNamedAccounts, deployments } = hre;
     const { deploy, log } = deployments;
     const { deployer } = await getNamedAccounts();
